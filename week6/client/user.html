@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="user.css" />
+		<script defer src="user.js"></script>
+		<title>User Page</title>
+	</head>
+	<body>
+		<h1 class="text-center heading">User Data</h1>
+		<table class="mt-5 table table-primary table-striped">
+			<thead>
+				<tr>
+					<th scope="col">Details</th>
+					<th scope="col">Info</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Username</td>
+					<td id="username">Example</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td id="email">Example</td>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td id="name">Example</td>
+				</tr>
+				<tr>
+					<td>Roll Number</td>
+					<td id="roll">Example</td>
+				</tr>
+				<tr>
+					<td>Phone</td>
+					<td id="phone">Example</td>
+				</tr>
+				<tr>
+					<td>Branch</td>
+					<td id="branch">Example</td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td id="address">Example</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="d-flex justify-content-center mt-4">
+			<button
+				type="button"
+				style="margin-right: 1rem"
+				class="btn btn-primary"
+				id="edit"
+				data-bs-toggle="modal"
+				data-bs-target="#otpModal"
+			>
+				Edit
+			</button>
+			<button id="sendotp" class="btn btn-success">Send OTP</button>
+		</div>
+		<!-- <div id="getdetails"><button>Get Details</button></div> -->
+
+		<!-- OTP Modal -->
+		<div style="color: black" class="modal fade" id="otpModal" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="otpModalLabel">OTP Sent</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+						></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="otp">Enter OTP</label>
+								<input type="text" class="form-control" id="otp" name="otp" />
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							Cancel
+						</button>
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-toggle="modal"
+							data-bs-target="#editModal"
+							id="proceed"
+						>
+							Proceed
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Edit Modal -->
+		<div style="color: black" class="modal fade" id="editModal" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="editModalLabel">Edit Info</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+						></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="row form-group">
+								<div class="col">
+									<label for="usernameForm">Username</label>
+									<input
+										type="text"
+										class="form-control"
+										id="usernameForm"
+										name="username"
+									/>
+								</div>
+								<div class="col">
+									<label for="emailForm">Email</label>
+									<input
+										type="email"
+										class="form-control"
+										id="emailForm"
+										name="email"
+									/>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col">
+									<label for="nameForm">Name</label>
+									<input
+										type="text"
+										class="form-control"
+										id="nameForm"
+										name="name"
+									/>
+								</div>
+								<div class="col">
+									<label for="rollForm">Roll Number</label>
+									<input
+										type="text"
+										class="form-control"
+										id="rollForm"
+										name="roll"
+									/>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col">
+									<label for="phoneForm">Phone Number</label>
+									<input
+										type="text"
+										class="form-control"
+										id="phoneForm"
+										name="phone"
+									/>
+								</div>
+								<div class="col">
+									<label for="branchForm">Branch</label>
+									<input
+										type="text"
+										class="form-control"
+										id="branchForm"
+										name="branch"
+									/>
+								</div>
+							</div>
+							<div>
+								<label for="addressForm">Address</label>
+								<textarea
+									type="text"
+									class="form-control"
+									id="addressForm"
+									name="address"
+									rows="3"
+								></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							Close
+						</button>
+						<button type="button" id="update" class="btn btn-primary">
+							Update
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

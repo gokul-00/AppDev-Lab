@@ -1,0 +1,17 @@
+body {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: stretch;
+    background-image: linear-gradient(to left bottom, #1a478b, #1b376f, #172854, #111a3a, #0a0a23);
+    color: white;
+}
+
+table {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.heading {
+    margin-top: 200px;
+}

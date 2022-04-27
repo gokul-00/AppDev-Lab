@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.mobilebanking.fragments.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:popUpTo="@id/signInFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_registerFragment"
+            app:popUpTo="@id/signInFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mobilebanking.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addBeneficiaryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/addBeneficiaryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_externalFundFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/externalFundFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_onlineBillFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/onlineBillFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_transactionHistoryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/transactionHistoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_signInFragment"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBeneficiaryFragment"
+        android:name="com.example.mobilebanking.fragments.AddBeneficiaryFragment"
+        android:label="fragment_add_beneficiary"
+        tools:layout="@layout/fragment_add_beneficiary" />
+    <fragment
+        android:id="@+id/externalFundFragment"
+        android:name="com.example.mobilebanking.fragments.ExternalFundFragment"
+        android:label="fragment_external_fund"
+        tools:layout="@layout/fragment_external_fund" />
+    <fragment
+        android:id="@+id/onlineBillFragment"
+        android:name="com.example.mobilebanking.fragments.OnlineBillFragment"
+        android:label="fragment_online_bill"
+        tools:layout="@layout/fragment_online_bill" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.mobilebanking.fragments.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_signInFragment"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionHistoryFragment"
+        android:name="com.example.mobilebanking.fragments.TransactionHistoryFragment"
+        android:label="fragment_transaction_history"
+        tools:layout="@layout/fragment_transaction_history" />
+
+</navigation>

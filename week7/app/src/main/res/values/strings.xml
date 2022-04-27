@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Restaurant</string>
+
+    <string-array name="menuType">
+        <item>Veg</item>
+        <item>Non Veg</item>
+    </string-array>
+
+    <string-array name="drinks">
+        <item>Lemon juice</item>
+        <item>soup</item>
+        <item>Milkshake</item>
+    </string-array>
+
+    <string-array name="starters">
+        <item>Tikka</item>
+        <item>Kabab</item>
+        <item>Tandoori</item>
+    </string-array>
+
+    <string-array name="mainDish">
+        <item>Roti</item>
+        <item>Noodles</item>
+        <item>Biryani</item>
+    </string-array>
+
+    <string-array name="deserts">
+        <item>Ice cream</item>
+        <item>Sweet Dish</item>
+    </string-array>
+</resources>

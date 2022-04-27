@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Registration</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="container">
+			<h3 id="header">Online Registration</h3>
+			<div id="form">
+				<form method="post">
+					<div class="form-input">
+						<label for="firstname">First Name </label>
+						<input type="text" name="firstname" id="firstname" />
+						<small></small>
+					</div>
+					<div class="form-input">
+						<label for="lastname">Last Name </label>
+						<input type="text" name="lastname" id="lastname" />
+						<small></small>
+					</div>
+					<div
+						class="form-input"
+						style="display: flex; align-items: center; justify-content: center"
+					>
+						<label for="gender" style="display: block">Gender </label>
+
+						<input type="radio" name="gender" id="male" value="male" />
+						<label for="male">Male </label>
+						<input type="radio" name="gender" id="female" value="male" />
+						<label for="female">Female</label>
+
+						<small></small>
+					</div>
+					<div class="form-input">
+						<label for="mobile">Mobile </label>
+						<input type="tel" name="mobile" id="mobile" />
+						<small></small>
+					</div>
+					<div class="form-input">
+						<label for="email">Email </label>
+						<input type="email" name="email" id="email" />
+						<small></small>
+					</div>
+					<div class="form-input">
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password" />
+						<small></small>
+					</div>
+					<div class="form-input">
+						<label for="address">Address </label>
+						<textarea name="address" id="address" cols="30" rows="5"></textarea>
+						<small></small>
+					</div>
+					<div class="form-input">
+						<label for="state">State </label>
+						<input type="text" name="state" id="state" />
+						<small></small>
+					</div>
+					<div class="form-input">
+						<label for="city">City </label>
+						<input type="text" name="city" id="city" />
+						<small></small>
+					</div>
+					<div class="form-input">
+						<label for="country">Country </label>
+						<select name="country" id="country">
+							<option value="japan">Japan</option>
+							<option value="south korea">South korea</option>
+							<option value="china">China</option>
+							<option value="india" selected>India</option>
+							<option value="mexico">Mexico</option>
+							<option value="united states">United states</option>
+							<option value="sri lanka">Sri Lanka</option>
+						</select>
+						<small></small>
+					</div>
+					<input type="submit" id="submit" value="Submit" />
+				</form>
+			</div>
+			<button id="clear">Clear</button>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

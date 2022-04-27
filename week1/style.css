@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f9fafb;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+#container {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	width: 640px;
+	padding: 20px 40px;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+h3 {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.form-input {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-input label {
+	color: #777;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-input input,
+textarea,
+select,
+optgroup,
+option {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+}
+
+.form-input input:focus,
+textarea:focus,
+select:focus {
+	outline: 0;
+	border-color: #3498db;
+}
+
+#form small {
+	color: rgb(241, 45, 45);
+	font-size: 14px;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+.form-input.success input {
+	border-color: rgb(6, 192, 6);
+}
+.form-input.success textarea {
+	border-color: rgb(6, 192, 6);
+}
+
+.form-input.error input {
+	border-color: rgb(241, 45, 45);
+}
+.form-input.error textarea {
+	border-color: rgb(241, 45, 45);
+}
+
+#clear {
+	cursor: pointer;
+	background-color: #3498db;
+	border: 2px solid #3498db;
+	border-radius: 4px;
+	color: #fff;
+	padding: 10px;
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+#submit {
+	cursor: pointer;
+	background-color: #3498db;
+	border: 2px solid #3498db;
+	border-radius: 4px;
+	color: #fff;
+	padding: 10px;
+	font-size: 16px;
+	margin-top: 20px;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link href="register.css" rel="stylesheet" />
+		<script defer src="register.js"></script>
+		<title>Register</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="form-container col-md-6 offset-md-3">
+					<h1 class="text-center mb-4">Register</h1>
+					<form>
+						<div class="row form-group">
+							<div class="col">
+								<label for="username">Username</label>
+								<input
+									type="text"
+									class="form-control"
+									id="username"
+									name="username"
+								/>
+							</div>
+						</div>
+						<div class="row form-group">
+							<div class="col">
+								<label for="email">Email</label>
+								<input
+									type="email"
+									class="form-control"
+									id="email"
+									name="email"
+								/>
+							</div>
+						</div>
+						<div class="row form-group">
+							<div class="col">
+								<label for="name">Name</label>
+								<input type="text" class="form-control" id="name" name="name" />
+							</div>
+							<div class="col">
+								<label for="roll">Roll Number</label>
+								<input type="text" class="form-control" id="roll" name="roll" />
+							</div>
+						</div>
+						<div class="row form-group">
+							<div class="col">
+								<label for="password">Password</label>
+								<input
+									type="password"
+									class="form-control"
+									id="password"
+									name="password"
+								/>
+							</div>
+							<div class="col">
+								<label for="cpassword">Confirm Password</label>
+								<input
+									type="password"
+									class="form-control"
+									id="cpassword"
+									name="cpassword"
+								/>
+							</div>
+						</div>
+						<div class="row form-group">
+							<div class="col">
+								<label for="phone">Phone Number</label>
+								<input
+									type="text"
+									class="form-control"
+									id="phone"
+									name="phone"
+								/>
+							</div>
+							<div class="col">
+								<label for="branch">Branch</label>
+								<input
+									type="text"
+									class="form-control"
+									id="branch"
+									name="branch"
+								/>
+							</div>
+						</div>
+						<div>
+							<label for="address">Address</label>
+							<textarea
+								type="text"
+								class="form-control"
+								id="address"
+								name="phone"
+								rows="3"
+							></textarea>
+						</div>
+						<div class="mt-4 text-center">
+							<button type="submit" id="submit" class="mb-2 btn btn-primary">
+								Register
+							</button>
+							<br />
+							<a href="login.html" class="link-dark"
+								>Already Registered? Sign in</a
+							>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
