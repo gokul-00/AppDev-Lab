@@ -1,0 +1,28 @@
+.box {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.unanswered {
+    background-color: #fff;
+    color: #000;
+}
+
+.answered {
+    background-color: #444;
+    color: #fff;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(5, 75px);
+    grid-template-columns: 75px 75px 75px 75px;
+    grid-auto-flow: row;
+}
+
+.box:hover {
+    cursor: pointer;
+}

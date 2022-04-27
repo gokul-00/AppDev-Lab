@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Online Exam</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="row mt-5">
+            <div class="col">
+                <label for="username" class="visually-hidden">username</label>
+                <input type="text" class="form-control" id="username" placeholder="Username">
+            </div>
+            <div class="col">
+                <label for="rollno" class="visually-hidden">Roll Number</label>
+                <input type="text" class="form-control" id="rollno" placeholder="Roll Number">
+            </div>
+        </form>
+        <h3 class="text-center mt-2">
+            App Development Lab
+            <small class="text-muted">CSLR62</small>
+        </h3>
+        <div>
+            <p>Time: </p>
+            <p>Date: </p>
+            <p>Total marks: 25</p>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-8">
+
+
+
+                <form>
+
+                    <div id="questions">
+
+                    </div>
+                    <br>
+                    <div class="d-block mb-3">
+                        <div>
+                            <button type="button" class="btn btn-primary" id="prev">prev</button>
+                            <button type="button" class="btn btn-primary" id="next">next</button>
+                            <button type="button" class="btn btn-outline-danger" id="clear">Clear</button>
+                        </div>
+                        <br>
+                        <div>
+                            <button type="submit" class="btn btn-outline-success" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4">
+                <div class="wrapper">
+                    <div class="box unanswered" onclick="gotoQuest(1)">1</div>
+                    <div class="box unanswered" onclick="gotoQuest(2)">2</div>
+                    <div class="box unanswered" onclick="gotoQuest(3)">3</div>
+                    <div class="box unanswered" onclick="gotoQuest(4)">4</div>
+                    <div class="box unanswered" onclick="gotoQuest(5)">5</div>
+                    <div class="box unanswered" onclick="gotoQuest(6)">6</div>
+                    <div class="box unanswered" onclick="gotoQuest(7)">7</div>
+                    <div class="box unanswered" onclick="gotoQuest(8)">8</div>
+                    <div class="box unanswered" onclick="gotoQuest(9)">9</div>
+                    <div class="box unanswered" onclick="gotoQuest(10)">10</div>
+                    <div class="box unanswered" onclick="gotoQuest(11)">11</div>
+                    <div class="box unanswered" onclick="gotoQuest(12)">12</div>
+                    <div class="box unanswered" onclick="gotoQuest(13)">13</div>
+                    <div class="box unanswered" onclick="gotoQuest(14)">14</div>
+                    <div class="box unanswered" onclick="gotoQuest(15)">15</div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
